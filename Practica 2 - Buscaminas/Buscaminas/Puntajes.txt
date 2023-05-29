@@ -1,0 +1,11 @@
++ Jugador: Alan    Direccion:  /127.0.0.1   Puerto: 55788    Nivel:  1    Puntos:  0    Tiempo:   15.655 seg
++ Jugador: Alan    Direccion:  /127.0.0.1   Puerto: 52223    Nivel:  1    Puntos:  146    Tiempo:   53.864 seg
++ Jugador: Alan    Direccion:  /127.0.0.1   Puerto: 49666    Nivel:  3    Puntos:  41    Tiempo:   60.361 seg
++ Jugador: Roy    Direccion:  /127.0.0.1   Puerto: 54051    Nivel:  2    Puntos:  25    Tiempo:   99.753 seg
++ Jugador: AlanAMB    Direccion:  /127.0.0.1   Puerto: 50425    Nivel:  1    Puntos:  31    Tiempo:   9.958 seg
++ Jugador: Alan    Direccion:  /127.0.0.1   Puerto: 53126    Nivel:  2    Puntos:  4    Tiempo:   13.664 seg
++ Jugador: Alan    Direccion:  /127.0.0.1   Puerto: 53919    Nivel:  1    Puntos:  4    Tiempo:   15.742 seg
++ Jugador: Alan    Direccion:  /127.0.0.1   Puerto: 55947    Nivel:  1    Puntos:  0    Tiempo:   64.49 seg
++ Jugador: ads    Direccion:  /127.0.0.1   Puerto: 55228    Nivel:  1    Puntos:  0    Tiempo:   722.117 seg
++ Jugador: sda    Direccion:  /127.0.0.1   Puerto: 49667    Nivel:  1    Puntos:  0    Tiempo:   47.463 seg
++ Jugador: Tamara Pute    Direccion:  /127.0.0.1   Puerto: 58593    Nivel:  1    Puntos:  0    Tiempo:   22.345 seg

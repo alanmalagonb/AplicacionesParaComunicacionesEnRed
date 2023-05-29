@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipn.buscaminas.BuscaminasController">
+   <children>
+      <BorderPane layoutX="65.0" layoutY="75.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0" styleClass="top-bar" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@flag_icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="flagsLbl" prefHeight="20.0" prefWidth="56.0" text="99" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="logroBtn" fitHeight="30.0" fitWidth="30.0" onMousePressed="#logros" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@trophy_icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="80.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <HBox fx:id="content" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="top-bar" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin></HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipn.drive.DriveController">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="110.0" prefWidth="200.0" stylesheets="@values/style.css">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="68.0" onMousePressed="#opciones" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/settings.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true" scaleX="0.75" scaleY="0.75" scaleZ="0.75">
+                           <image>
+                              <Image url="@img/cloud.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="153.0" prefWidth="142.0" text="Drive" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="58.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="117.0" prefWidth="435.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMousePressed="#carpetaNueva" prefHeight="18.0" prefWidth="384.0" stylesheets="@values/style.css" text="Carpeta Nueva">
+                           <styleClass>
+                              <String fx:value="add-btn" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMousePressed="#subirArchivo" prefHeight="25.0" prefWidth="403.0" stylesheets="@values/style.css" text="Subir archivo">
+                                 <styleClass>
+                                    <String fx:value="add-btn" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onMousePressed="#subirCarpeta" prefHeight="25.0" prefWidth="403.0" stylesheets="@values/style.css" text="Subir carpeta">
+                                 <styleClass>
+                                    <String fx:value="add-btn" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="15.0" />
+                           </opaqueInsets>
+                        </HBox>
+                        <Button fx:id="remotoBtn" mnemonicParsing="false" onMousePressed="#miUnidad" prefHeight="25.0" prefWidth="394.0" stylesheets="@values/style.css" text="Mi unidad">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="directory-btn" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="localBtn" mnemonicParsing="false" onMousePressed="#computadora" prefHeight="25.0" prefWidth="401.0" stylesheets="@values/style.css" text="Computadora">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="directory-btn" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <Pane prefHeight="69.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+                  <VBox fx:id="chosenFileCard" alignment="CENTER" prefHeight="453.0" prefWidth="335.0" stylesheets="@values/style.css">
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="57.0" prefWidth="219.0">
+                           <children>
+                              <Label fx:id="fileNameLbl" alignment="CENTER" contentDisplay="TOP" prefHeight="23.0" prefWidth="354.0" text="Carpeta/Archivo">
+                                 <font>
+                                    <Font name="Calibri" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="9.0" prefWidth="335.0">
+                                 <children>
+                                    <Label text="Tamaño del archivo" />
+                                    <Label fx:id="fileSizeLbl" text="- KB">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <ImageView fx:id="fileImg" fitHeight="175.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/folder.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="39.0" prefWidth="312.0" stylesheets="@values/style.css">
+                           <children>
+                              <TextField fx:id="nameTxt" prefHeight="25.0" prefWidth="137.0" promptText="Escriba un nombre" styleClass="transparent" stylesheets="@values/style.css" />
+                              <Button fx:id="renameBtn" mnemonicParsing="false" onMousePressed="#renombrar" prefHeight="25.0" prefWidth="79.0" styleClass="search-button" stylesheets="@values/style.css" text="Renombrar" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="search-box" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </HBox>
+                        <Button fx:id="downloadBtn" mnemonicParsing="false" onMousePressed="#descargar" prefHeight="25.0" prefWidth="230.0" stylesheets="@values/style.css" text="Descargar">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="download-btn" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="deleteBtn" mnemonicParsing="false" onMousePressed="#eliminar" prefHeight="25.0" prefWidth="230.0" stylesheets="@values/style.css" text="Eliminar">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="delete-btn" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="chosen-file-card" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="570.0" prefWidth="785.0" styleClass="transparent" stylesheets="@values/style.css">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="19.0" prefWidth="50.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

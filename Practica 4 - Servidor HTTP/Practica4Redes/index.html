@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html;" />
+  <title>Servidor Web</title>
+  <style>
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body style="background-color: #00a0fdd9">
+  <center>
+    <h3>Ejemplo sencillo de un formulario</h3>
+    <h4>Formulario de Registro</h4>
+    <img src="recursos/escom.png" style="width: 300px"/>
+    <br/>
+    <br/>
+  </center>
+
+  <div class="container">
+    <div class="card">
+      <h2>Formulario GET</h2>
+      <form action="get" method="GET" name="formGET">
+        Nombre: <br />
+        <input type="text" name="Nombre" /><br />
+
+        Direccion: <br />
+        <input type="text" name="Direccion" /><br />
+
+        Telefono: <br />
+        <input type="text" name="Telefono" /><br />
+
+        Comentarios:<br />
+        <textarea name="Comentarios" rows="7" cols="40"></textarea>
+        <br />
+
+        <input type="submit" value="Enviar datos" />
+        <input type="reset" value="Borrar datos" />
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Formulario POST</h2>
+      <form action="post" method="POST" name="formPost">
+        Nombre: <br />
+        <input type="text" name="Nombre" /><br />
+
+        Direccion: <br />
+        <input type="text" name="Direccion" /><br />
+
+        Telefono: <br />
+        <input type="text" name="Telefono" /><br />
+
+        Comentarios:<br />
+        <textarea name="Comentarios" rows="7" cols="40"></textarea>
+        <br />
+
+        <input type="submit" value="Enviar datos" />
+        <input type="reset" value="Borrar datos" />
+      </form>
+    </div>
+  </div>
+</body>
+</html>
