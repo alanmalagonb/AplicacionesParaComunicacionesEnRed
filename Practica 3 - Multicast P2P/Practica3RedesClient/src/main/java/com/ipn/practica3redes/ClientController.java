@@ -75,6 +75,7 @@ public class ClientController implements Initializable {
         filesLV.getItems().clear();
 
         if(!servers.isEmpty()){
+            System.out.println(servers.size());
             int i;
             for (i = 0; i < servers.size(); i++) {
                 sClient.serverConnection(servers.get(i));
@@ -111,13 +112,18 @@ public class ClientController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         clientsStart();
-
         filesLV.setOnMouseClicked(mouseEvent -> {
             selectedLV = filesLV.getSelectionModel().getSelectedIndex();
             if(selectedLV < 0) return;
             FileServer fs = db.getFiles().get(selectedLV);
             nameLbl.setText(fs.getFoundFile().getFileName());
-            serverLbl.setText(fs.getFileInServer());
+            int searchPort =0000;
+            for(DataFromServer server: db.getServers()){
+                if(server.getAddress() == fs.getFileInServer()){
+                    searchPort = server.getSport();
+                }
+            }
+            serverLbl.setText(fs.getFileInServer() +":"+searchPort);
             ruteLbl.setText(fs.getFoundFile().getPath());
             md5Lbl.setText(fs.getFoundFile().getMd5());
             downloadBtn.setVisible(true);
@@ -130,6 +136,7 @@ public class ClientController implements Initializable {
         //sw.start();
         sClient.start();
         dClient.start();
+        md5Lbl.setVisible(false);
         downloadBtn.setVisible(false);
         downloadPB.setVisible(false);
     }

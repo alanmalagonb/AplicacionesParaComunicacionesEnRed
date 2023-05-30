@@ -50,7 +50,7 @@
                         <String fx:value="shadow" />
                      </styleClass>
                      <children>
-                        <VBox prefHeight="435.0" prefWidth="365.0">
+                        <VBox prefHeight="435.0" prefWidth="365.0" stylesheets="@styles.css">
                            <children>
                            
                                      <Label alignment="CENTER" prefHeight="45.0" prefWidth="348.0" text="Nombre">
@@ -80,11 +80,12 @@
                                  <VBox.margin>
                                     <Insets left="20.0" right="20.0" />
                                  </VBox.margin></Label>
-                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="413.0" text="MD5">
+                              <!--<Label alignment="CENTER" prefHeight="43.0" prefWidth="413.0" text="MD5">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
                               </Label>
+                              -->
                               <Label fx:id="md5Lbl" alignment="TOP_CENTER" prefHeight="35.0" prefWidth="348.0" text="-" textAlignment="CENTER" wrapText="true">
                                  <VBox.margin>
                                     <Insets left="20.0" right="20.0" />

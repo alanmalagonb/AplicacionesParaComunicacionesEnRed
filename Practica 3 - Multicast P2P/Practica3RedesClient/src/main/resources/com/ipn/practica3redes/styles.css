@@ -41,7 +41,7 @@
 }
 
 .download-btn{
-    -fx-background-color: #5eaeff;
+    -fx-background-color: #72ceff;
     -fx-background-radius: 100;
 }
 
@@ -63,4 +63,8 @@
 .file-item{
     -fx-background-color: #FFFFFF;
     -fx-background-radius: 30;
+}
+
+.fondo {
+    -fx-background-color: #e09eff;
 }

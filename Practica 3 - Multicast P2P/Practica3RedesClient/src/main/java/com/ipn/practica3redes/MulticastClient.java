@@ -105,7 +105,11 @@ public class MulticastClient extends Thread{
     public int isInList(List<DataFromServer>list, DataFromServer dfs){
         int i;
         for(i = 0; i < list.size(); i++){
-            if(list.get(i).getAddress().equals(dfs.getAddress())){
+            // Para diferentes maquinas
+            //if(list.get(i).getAddress().equals(dfs.getAddress())){
+
+            // Para misma maquina
+            if(list.get(i).getSport() == dfs.getSport()){
                 return i;
             }
         }

@@ -24,7 +24,7 @@ public class SearchClient extends Thread{
     public void serverConnection(DataFromServer server){
         try {
             this.address = server.getAddress();
-            System.out.println(server.getAddress()+" " +server.getPort());
+            System.out.println(server.getAddress()+" " +server.getSport());
             cl = new Socket(address, server.getSport());
             System.out.println(Constants.CLIENT_CONNECTED);
         }catch (Exception e){
@@ -57,11 +57,13 @@ public class SearchClient extends Thread{
                                 // Si el archivo es encontrado, lo agregamos a la lista de archivos y servidores
                                 fs = new FileServer(address,response);
                                 db.addFile(fs);
+                                System.out.println(response.getFileName());
                             }
                             ois.close();
 
 
                     // Actualizamos la vista de la aplicación con los archivos encontrados
+                    if(fs == null) return;
                     app.search(fs);
                 }catch (Exception e){
                     e.printStackTrace();

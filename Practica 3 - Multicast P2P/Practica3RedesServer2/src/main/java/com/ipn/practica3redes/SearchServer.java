@@ -45,7 +45,7 @@ public class SearchServer extends Thread{
                     File[] files = dir.listFiles();
                     for(File file : files)
                         if(file.isFile())
-                            if(file.getName().equals(fileName)){
+                            if(file.getName().equals(fileName) ){
                                 result.setFileName(file.getName());
                                 result.setPath(file.getAbsolutePath());
                                 result.setMd5(getMD5(file.getAbsolutePath()));

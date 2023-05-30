@@ -19,6 +19,7 @@ public class Manejador extends Thread {
         this.dos = new DataOutputStream(this.cl.getOutputStream());
         this.mime = new Mime();
         this.dis = new DataInputStream(this.cl.getInputStream());
+
     }
 
     public void sendResource(String arg, int flag) {
@@ -188,7 +189,6 @@ public class Manejador extends Thread {
 
         try {
             String line = dis.readLine(); // Lee primera linea DEPRECIADO !!!!
-
             // Empty line
             if (line == null) {
                 String vacia = "<html><head><title>Servidor WEB</title><body bgcolor='#AACCFF'>Linea Vacia</body></html>";
@@ -241,6 +241,8 @@ public class Manejador extends Thread {
                     byte[] b = new byte[tam];
 
                     dis.read(b);
+
+
                     //Create a string with the bytes reads
                     String request = new String(b, 0, tam);
 
@@ -266,34 +268,49 @@ public class Manejador extends Thread {
                 /***** PUT *****/
                 else if (line.toUpperCase().startsWith("PUT")) {
                     String fileName = getResourceName(line);
-                    String ruta = fileName;
+                    int contentLength = -1;
+                    String inputLine;
 
-                    try {
-                        String contenido = "MÉTODO PUT : ACTUALIZAR O CREAR EL RECURSO";
-                        File file = new File(ruta);
-                        // The file is created if it does not exist
-                        System.out.println("Respuesta PUT: \n" + headers);
-
-                        if (!file.exists()) {
-                            file.createNewFile();
+                    // Read the headers
+                    while ((inputLine = dis.readLine()) != null && !inputLine.isEmpty()) {
+                        if (inputLine.startsWith("Content-Length:")) {
+                            contentLength = Integer.parseInt(inputLine.substring(inputLine.indexOf(":") + 1).trim());
                         }
-                        else{
-                            headers = "HTTP/1.1 204 OK\n"
-                                    + "Date: " + new Date() + " \n"
-                                    + "Server: NetServer Server/1.0 \n"
-                                    + "Content-Type: text/html \n\n";
-                        }
-                        FileWriter fw = new FileWriter(file);
-                        BufferedWriter bw = new BufferedWriter(fw);
-                        bw.write(contenido);
-                        bw.close();
-                    } catch (Exception e) {
-                        e.printStackTrace();
                     }
+
+                    // Read the body content
+                    if (contentLength > 0) {
+                        byte[] buffer = new byte[1024];  // Adjust buffer size as needed
+                        int bytesRead;
+                        int totalBytesRead = 0;
+
+                        FileOutputStream fos = new FileOutputStream(fileName);
+
+                        while (totalBytesRead < contentLength && (bytesRead = dis.read(buffer, 0, Math.min(buffer.length, contentLength - totalBytesRead))) != -1) {
+                            fos.write(buffer, 0, bytesRead);
+                            totalBytesRead += bytesRead;
+                        }
+
+                        fos.close();
+                    }
+
+                    File file = new File(fileName);
+
+                    if (!file.exists()) {
+                        file.createNewFile();
+                    }else{
+                        headers = "HTTP/1.1 204 OK\n"
+                                + "Date: " + new Date() + " \n"
+                                + "Server: NetServer Server/1.0 \n"
+                                + "Content-Type: text/html \n\n";
+                    }
+
                     dos.write(headers.getBytes());
                     dos.flush();
-                    System.out.println("Respuesta PUT: \n" + headers);
+                    System.out.println("Response PUT:\n" + headers);
                 }
+
+
 
                 else {
                     //Methods not implemented on the server

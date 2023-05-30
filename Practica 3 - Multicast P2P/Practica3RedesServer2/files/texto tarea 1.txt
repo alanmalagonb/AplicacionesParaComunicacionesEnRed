@@ -1,0 +1,6 @@
+100 datos muestrales
+suma de tres armonicos 
+1 solo periodo para la mejor representacion de la serie de fourier de 0-0.25
+por eso solo tenemos 26 muestras 
+sacamos la matriz de k a 27
+ciclos por segundo, tomando solo los datos relevantes 
