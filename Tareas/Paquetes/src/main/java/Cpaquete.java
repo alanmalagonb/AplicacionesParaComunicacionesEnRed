@@ -13,9 +13,9 @@ public class Cpaquete {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             DatagramSocket cl = new DatagramSocket();
             while (true) {
-                System.out.println("Escribe un mensaje, <Enter> para enviar, \"salir\" para terminar");
+                System.out.println("Ingresa el mensaje,  \"-\" para terminar");
                 String msj = br.readLine();
-                if (msj.compareToIgnoreCase("salir") == 0) {
+                if (msj.compareToIgnoreCase("-") == 0) {
                     System.out.println("BYE");
                     br.close();
                     cl.close();
@@ -45,7 +45,7 @@ public class Cpaquete {
                             cl.receive(p1); //Recibimos el paquete de datagramas 
                             byte[] bp1 = p1.getData(); //Metemos el contenido en un array de bytes
                             for (int i = 0; i < tam; i++) { //verificamos que sean la cantidad de elementos correctos
-                                System.out.println((j * tam) + i + "->" + i);
+                                System.out.println((j * tam) + i + "~ " + i);
                                 b_eco[(j * tam) + i] = bp1[i]; //Almacenamos en el lugar indicado los bytes
                             }//for
                             numPaquete++;  //Incrementamos el numero de paquete

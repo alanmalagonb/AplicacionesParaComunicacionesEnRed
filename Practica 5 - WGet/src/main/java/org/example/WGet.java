@@ -349,9 +349,9 @@ class wget2 implements Runnable {
     @Override
     public void run() {
         // Dirección URL para descargar
-        //String dirname = "https://logos-marques.com/wp-content/uploads/2021/03/Marvel-Logo-2048x1158.png";
+        //String dirname = "https://www.usmagazine.com/wp-content/uploads/2023/03/Who-Are-TWICE-Everything-to-Know-About-the-Breakthrough-K-Pop-Girl-Group.jpg";
         //String dirname = "http://148.204.58.221/axel/aplicaciones/sockets/java/canales/";
-        //String dirname = "http://148.204.58.221/axel/aplicaciones/22-2/";
+        //String dirname = "http://148.204.58.221/axel/aplicaciones/practicas/";
 
         String dirname = "";
         boolean resource;
