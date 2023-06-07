@@ -5,97 +5,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="163a2f23-9e80-45ee-859b-b63b4d4ce7a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/CNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EchoClient2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EcoC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EcoS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MultiC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MultiS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MulticastChannel.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MulticastClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MulticastServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Objeto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Receiver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/SNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Sender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/CNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/Receiver_O.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/SNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/Sender_O.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/SimpleDaytimeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TestEchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TestEchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TimeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TimeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UCNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UCNBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/USNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/USNBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/canales.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/duke1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ChangeRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ChangeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoWorker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/Rox%20Java%20NIO%20Tutorial.mht" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/RspHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/RspHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ServerDataEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ServerDataEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/UDPEchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/UDPEchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/flujo/ClienteNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/flujo/ServidorNB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/flujo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/icons/back.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/icons/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/icons/compressed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/icons/folder.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/icons/image2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/icons/text.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/148.204.58.221/icons/unknown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Who-Are-TWICE-Everything-to-Know-About-the-Breakthrough-K-Pop-Girl-Group.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/Pr%e1ctica%202_batalla_naval.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/Pr%e1ctica%203.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/Pr%e1ctica%205.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/Pr%e1ctica%206.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/Pr%e1ctica%207.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/Pr%e1ctica%208.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/pr%e1ctica_2_buscaminas.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/practica1.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/practica2.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/practica2_carrito_compras.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/practica3_chat.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/practica4.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/practica5%20WGET.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/practicas/practica5%20WGET.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/CNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EchoClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EchoClient2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EchoServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EcoC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/EcoS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MultiC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MultiS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MulticastChannel.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MulticastClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/MulticastServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Objeto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Receiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Receiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/SNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Sender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/CNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/Receiver_O.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/SNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/Sender_O.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/Serializacion/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/SimpleDaytimeServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TestEchoClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TestEchoServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TimeClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/TimeServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UCNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UCNBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPEchoServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/UDPS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/USNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/USNBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/canales.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/duke1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ChangeRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ChangeRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoWorker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/EchoWorker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/NioServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/Rox%20Java%20NIO%20Tutorial.mht" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/RspHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/RspHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ServerDataEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/ServerDataEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/UDPEchoClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/UDPEchoServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/ejemplo_NIO/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/flujo/ClienteNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/flujo/ServidorNB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/flujo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/axel/aplicaciones/sockets/java/canales/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/back.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/blank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/compressed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/folder.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/image2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/layout.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/text.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/148.204.58.221/icons/unknown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Who-Are-TWICE-Everything-to-Know-About-the-Breakthrough-K-Pop-Girl-Group.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WGet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tareas/Paquetes/src/main/java/Cpaquete.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tareas/Paquetes/src/main/java/Cpaquete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tareas/Paquetes/target/classes/Cpaquete.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tareas/Paquetes/target/classes/Cpaquete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tareas/Paquetes/target/classes/Spaquete.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tareas/Paquetes/target/classes/Spaquete.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +142,7 @@
       <workItem from="1685457373481" duration="1957000" />
       <workItem from="1685482369107" duration="523000" />
       <workItem from="1685945298829" duration="548000" />
-      <workItem from="1685970490054" duration="1247000" />
+      <workItem from="1685970490054" duration="3111000" />
     </task>
     <servers />
   </component>
