@@ -8,8 +8,7 @@ public class Spaquete {
             String msj="";
             DatagramSocket s = new DatagramSocket(pto);
             s.setReuseAddress(true);
-            // s.setBroadcast(true);
-            System.out.println("Servidor iniciado... esperando datagramas..");
+            System.out.println("Servidor iniciado en el puerto "+pto+" ... \nEn espera de datagramas...");
             for(;;){
                 byte[] b = new byte[65535];
                 DatagramPacket p = new DatagramPacket(b,b.length);
