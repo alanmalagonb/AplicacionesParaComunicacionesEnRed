@@ -24,6 +24,5 @@ public class Main {
 
         scanner.close();
     }
-
     // (2^3)*(sin(90))
 }
